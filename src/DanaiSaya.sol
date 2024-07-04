@@ -30,7 +30,7 @@ contract DanaiSaya {
 
     modifier hanyaPemilik {
         // require(msg.sender == i_pemilik, "Pengirim bukan si Pemilik"); atau
-        if (msg.sender != i_pemilik) revert BukanPemilik();
+        if (msg.sender != i_pemilik) revert DanaiSaya__BukanPemilik();
         _;
     }
 
